@@ -12,27 +12,27 @@
 				</extensions>
 			</storageModule>
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-				<configuration artifactName="${ProjName}" buildProperties="" id="io.sloeber.core.toolChain.release.440397276" name="Release" parent="org.eclipse.cdt.build.core.emptycfg">
+				<configuration artifactName="${ProjName}" buildProperties="" description="" id="io.sloeber.core.toolChain.release.440397276" name="Release" parent="org.eclipse.cdt.build.core.emptycfg">
 					<folderInfo id="io.sloeber.core.toolChain.release.440397276.1196976335" name="/" resourcePath="">
 						<toolChain id="io.sloeber.core.toolChain.release.2076700032" name="Arduino Toolchain (Sloeber edition)" superClass="io.sloeber.core.toolChain.release">
 							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="io.sloeber.targetplatform.693422425" name="Arduino Target" osList="all" superClass="io.sloeber.targetplatform"/>
-							<builder buildPath="${workspace_loc:/mieszadlo}/Release" id="io.sloeber.sketch.builder.590400192" managedBuildOn="true" name="Arduino sketch builder.Release" superClass="io.sloeber.sketch.builder"/>
+							<builder buildPath="${workspace_loc:/mieszadlo}/Release" id="io.sloeber.sketch.builder.590400192" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Arduino sketch builder" superClass="io.sloeber.sketch.builder"/>
 							<tool id="io.sloeber.tool.sketch.compiler.cpp.587604607" name="Arduino C++ Compiler" superClass="io.sloeber.tool.sketch.compiler.cpp">
-								<option id="io.sloeber.compiler.cpp.sketch.option.incpath.197216368" superClass="io.sloeber.compiler.cpp.sketch.option.incpath" valueType="includePath">
+								<option id="io.sloeber.compiler.cpp.sketch.option.incpath.197216368" name="Include Paths (-I)" superClass="io.sloeber.compiler.cpp.sketch.option.incpath" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mieszadlo/core/core}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mieszadlo/core/variant}&quot;"/>
 								</option>
 								<inputType id="io.sloeber.compiler.cpp.sketch.input.336565594" name="CPP source files" superClass="io.sloeber.compiler.cpp.sketch.input"/>
 							</tool>
 							<tool id="io.sloeber.tool.compiler.c.689175705" name="Arduino C Compiler" superClass="io.sloeber.tool.compiler.c">
-								<option id="io.sloeber.compiler.c.sketch.option.incpath.111999154" superClass="io.sloeber.compiler.c.sketch.option.incpath" valueType="includePath">
+								<option id="io.sloeber.compiler.c.sketch.option.incpath.111999154" name="Include Paths (-I)" superClass="io.sloeber.compiler.c.sketch.option.incpath" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mieszadlo/core/core}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mieszadlo/core/variant}&quot;"/>
 								</option>
 								<inputType id="io.sloeber.compiler.c.sketch.input.750669038" name="C Source Files" superClass="io.sloeber.compiler.c.sketch.input"/>
 							</tool>
 							<tool id="io.sloeber.tool.sketch.compiler.s.1518675925" name="Arduino Assembler" superClass="io.sloeber.tool.sketch.compiler.s">
-								<option id="io.sloeber.compiler.asm.sketch.option.incpath.981118536" superClass="io.sloeber.compiler.asm.sketch.option.incpath" valueType="includePath">
+								<option id="io.sloeber.compiler.asm.sketch.option.incpath.981118536" name="Include Paths (-I)" superClass="io.sloeber.compiler.asm.sketch.option.incpath" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mieszadlo/core/core}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mieszadlo/core/variant}&quot;"/>
 								</option>
@@ -59,4 +59,6 @@
 		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="refreshScope"/>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
 </cproject>
