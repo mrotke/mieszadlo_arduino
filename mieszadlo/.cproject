@@ -25,6 +25,9 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mieszadlo/libraries/LiquidCrystal_PCF8574/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mieszadlo/libraries/Wire}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mieszadlo/libraries/Wire/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mieszadlo/libraries/Robot_IR_Remote}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mieszadlo/libraries/Robot_IR_Remote/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mieszadlo/src}&quot;"/>
 								</option>
 								<inputType id="io.sloeber.compiler.cpp.sketch.input.336565594" name="CPP source files" superClass="io.sloeber.compiler.cpp.sketch.input"/>
 							</tool>
@@ -36,6 +39,8 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mieszadlo/libraries/LiquidCrystal_PCF8574/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mieszadlo/libraries/Wire}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mieszadlo/libraries/Wire/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mieszadlo/libraries/Robot_IR_Remote}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mieszadlo/libraries/Robot_IR_Remote/src}&quot;"/>
 								</option>
 								<inputType id="io.sloeber.compiler.c.sketch.input.750669038" name="C Source Files" superClass="io.sloeber.compiler.c.sketch.input"/>
 							</tool>
@@ -47,6 +52,8 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mieszadlo/libraries/LiquidCrystal_PCF8574/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mieszadlo/libraries/Wire}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mieszadlo/libraries/Wire/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mieszadlo/libraries/Robot_IR_Remote}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mieszadlo/libraries/Robot_IR_Remote/src}&quot;"/>
 								</option>
 								<inputType id="io.sloeber.compiler.S.sketch.input.1278064559" name="Assembly source files" superClass="io.sloeber.compiler.S.sketch.input"/>
 							</tool>
