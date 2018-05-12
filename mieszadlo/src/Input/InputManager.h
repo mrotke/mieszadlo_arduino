@@ -9,6 +9,7 @@
 #define SRC_INPUT_INPUTMANAGER_H_
 
 #include "BaseClasses/IObserver.h"
+#include "IR/IRDecoder.h"
 #include "conf.h"
 
 class InputManager {
@@ -19,17 +20,23 @@ public:
 	LAST
 	};
 
+	enum keys{
+	UP =10,
+	DOWN,
+	LEFT,
+	RIGHT,
+	ENTER,
+	REPEAT_KEY,
+	};
 
+	InputManager();
 	virtual ~InputManager();
 	void attachObserver(IObserver * obs);
 	static InputManager * getInstance();
 	void refresh();
-	void init();
+	void init(IRrecv* irrec);
 private:
-	InputManager();
-
-	static InputManager * instance;
-	static IObserver * observers[NUM_OF_OBSEVERS];
+	IObserver * observers[NUM_OF_OBSEVERS];
 	static uint8_t idx;
 };
 

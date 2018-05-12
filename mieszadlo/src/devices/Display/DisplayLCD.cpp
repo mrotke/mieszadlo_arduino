@@ -6,22 +6,14 @@
  */
 
 #include <devices/Display/DisplayLCD.h>
+#include "LiquidCrystal_PCF8574.h"
 #include "conf.h"
 
-DisplayLCD * DisplayLCD::instance = 0;
-
-DisplayLCD* DisplayLCD::getInstnce()
-{
-	if(!instance)
-		instance = new DisplayLCD;
-	return instance;
-
-}
 
 DisplayLCD::DisplayLCD():
 LiquidCrystal_PCF8574(LCD_I2C_ADR)
 {
-	begin(LCD_COLS, LCD_ROWS);
+
 }
 
 DisplayLCD::~DisplayLCD() {

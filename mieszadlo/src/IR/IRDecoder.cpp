@@ -12,8 +12,8 @@
 IRrecv * IRDecoder::irRec = 0;
 decode_results * IRDecoder::results = 0;
 
-void IRDecoder::init() {
-	irRec = new IRrecv(IRPIN);
+void IRDecoder::init(IRrecv* irrec) {
+	irRec = irrec;
 	irRec->enableIRIn();
 }
 
@@ -21,7 +21,6 @@ uint8_t IRDecoder::decode() {
 	if (irRec->decode(results) == 1) {
 		irRec->resume();
 		results->value &= 0x00FFFF;
-
 		if (results->value == 0)
 			return 15;
 

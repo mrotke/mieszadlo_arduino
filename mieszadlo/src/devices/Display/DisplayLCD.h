@@ -12,11 +12,10 @@
 
 class DisplayLCD: public LiquidCrystal_PCF8574 {
 public:
-	static DisplayLCD* getInstnce();
 	virtual ~DisplayLCD();
-private:
-	static DisplayLCD * instance;
 	DisplayLCD();
+private:
+
 };
 
 #endif /* SRC_DEVICES_DISPLAY_DISPLAYLCD_H_ */

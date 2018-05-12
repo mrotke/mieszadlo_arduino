@@ -6,22 +6,16 @@
  */
 
 #include <Input/InputManager.h>
-#include "IR/IRDecoder.h"
 #include "devices/Display/DisplayLCD.h"
 
-InputManager * InputManager::instance = 0;
 uint8_t InputManager::idx=0;
 
-InputManager* InputManager::getInstance() {
-	if (!instance)
-		instance = new InputManager;
-	return instance;
-}
 
 void InputManager::refresh() {
 	uint8_t mes = IRDecoder::decode();
 	if(mes != 255)
 	{
+
 //		DisplayLCD::getInstnce()->clear();
 //		DisplayLCD::getInstnce()->home();
 //		DisplayLCD::getInstnce()->setBacklight(255);
@@ -35,8 +29,8 @@ void InputManager::refresh() {
 
 }
 
-void InputManager::init() {
-	IRDecoder::init();
+void InputManager::init(IRrecv* irrec) {
+	IRDecoder::init(irrec);
 }
 
 InputManager::InputManager() {

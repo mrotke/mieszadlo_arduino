@@ -13,13 +13,11 @@
 #ifndef IRDECODER_H_
 #define IRDECODER_H_
 
-#define IRPIN IR_RECV_PIN
-
 class IRDecoder {
 private:
 	static IRrecv * irRec;
 public:
-	static void init();
+	static void init(IRrecv* irrec);
 	static uint8_t decode();
 	static decode_results *results;
 protected:

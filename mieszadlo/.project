@@ -42,6 +42,11 @@
 			<locationURI>ECLIPSE_HOME/arduinoPlugin/packages/arduino/hardware/avr/1.6.20/variants/eightanaloginputs</locationURI>
 		</link>
 		<link>
+			<name>libraries/L298N</name>
+			<type>2</type>
+			<location>/home/michal/Arduino/libraries/L298N</location>
+		</link>
+		<link>
 			<name>libraries/LiquidCrystal_PCF8574</name>
 			<type>2</type>
 			<locationURI>ECLIPSE_HOME/arduinoPlugin/libraries/LiquidCrystal_PCF8574/1.1.0</locationURI>

@@ -1,26 +1,55 @@
 #include "Arduino.h"
 #include <Wire.h>
 #include <LiquidCrystal_PCF8574.h>
-#include "Init/SystemInit.h"
+#include "conf.h"
+
+#include "conf.h"
 #include "Input/InputManager.h"
+#include "MenuSystem/Menu.h"
+#include "MenuSystem/MenuItems/MenuMotor.h"
+#include "MenuSystem/MenuItems/MenuBacklight.h"
+#include "devices/Display/DisplayLCD.h"
+#include "devices/MotorDriver/MotorDriver.h"
+#include <RobotIRremote.h>
+#include <RobotIRremoteInt.h>
 
-//LiquidCrystal_PCF8574 lcd(0x27);  // set the LCD address to 0x27 for a 16 chars and 2 line display
+DisplayLCD displayLCD = DisplayLCD();
+MotorDriver motorDriver = MotorDriver();
+MenuMotor menuMotor = MenuMotor(&displayLCD,&motorDriver);
+MenuBacklight menuBacklight = MenuBacklight(&displayLCD);
+InputManager inputManager = InputManager();
+Menu menu = Menu();
+IRrecv irRecv = IRrecv(IR_RECV_PIN);
 
-//The setup function is called once at startup of the sketch
+
+
+
+
 void setup()
 {
 	Wire.begin();
 	Serial.begin(9600);
-//	lcd.begin(16, 2); // initialize the lcd
+
 	pinMode(LED_BUILTIN, OUTPUT);
-	digitalWrite(LED_BUILTIN, LOW);
-	SystemInit::systemInit();
+
+
+
+	displayLCD.begin(LCD_COLS, LCD_ROWS);
+	inputManager.init(&irRecv);
+	displayLCD.clear();
+	displayLCD.setBacklight(100);
+//
+	menu.addMenuItem(&menuMotor);
+	menu.addMenuItem(&menuBacklight);
+//
+	inputManager.attachObserver(&menu);
 // Add your initialization code here
 }
 
 // The loop function is called in an endless loop
 void loop()
 {
-	InputManager::getInstance()->refresh();
+	delay(10);
+	inputManager.refresh();
 //Add your repeated code here
 }

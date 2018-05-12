@@ -18,6 +18,13 @@
 
 #define NUMBER_OF_KEYS 15
 
+///L298
+#define PIN_ENABLE 5
+#define PIN_IN1 4
+#define PIN_IN2 6
+
+///MENU
+#define NUM_OF_ITEMS 2
 
 
 
